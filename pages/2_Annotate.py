@@ -22,10 +22,14 @@ with st.sidebar:
     if model:
         sampling = True
 <<<<<<< HEAD
+<<<<<<< HEAD
         temperature = 0.1
 =======
         temperature = 0.0
 >>>>>>> 53867a7 (support human review)
+=======
+        temperature = 0.1
+>>>>>>> 54c6290 (update default model params for translation and annotation)
         top_p = 1.0
         top_k = 50
         random_seed = 42
@@ -55,10 +59,14 @@ with st.sidebar:
                 min_value=0.0,
                 max_value=2.0,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 value=0.1,
 =======
                 value=0.0,
 >>>>>>> 53867a7 (support human review)
+=======
+                value=0.1,
+>>>>>>> 54c6290 (update default model params for translation and annotation)
                 help="Higher values lead to greater variability",
             )  # float
 
