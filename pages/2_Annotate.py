@@ -21,7 +21,11 @@ with st.sidebar:
 
     if model:
         sampling = True
+<<<<<<< HEAD
         temperature = 0.1
+=======
+        temperature = 0.0
+>>>>>>> 53867a7 (support human review)
         top_p = 1.0
         top_k = 50
         random_seed = 42
@@ -50,7 +54,11 @@ with st.sidebar:
                 "Temperature",
                 min_value=0.0,
                 max_value=2.0,
+<<<<<<< HEAD
                 value=0.1,
+=======
+                value=0.0,
+>>>>>>> 53867a7 (support human review)
                 help="Higher values lead to greater variability",
             )  # float
 
@@ -168,4 +176,8 @@ if submitted:
             st.markdown(response)
 
 if submitted and response:
+<<<<<<< HEAD
     st.info("💡 Please refresh the page to continue")
+=======
+    st.info("💡 Please refresh the page to continue")
+>>>>>>> 53867a7 (support human review)

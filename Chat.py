@@ -178,4 +178,8 @@ if query := st.chat_input():
             st.write(response)
             st.session_state.messages.append(
                 {"role": "assistant", "content": response}
+<<<<<<< HEAD
             )
+=======
+            )
+>>>>>>> 53867a7 (support human review)
