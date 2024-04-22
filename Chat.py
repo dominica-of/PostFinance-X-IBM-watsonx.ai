@@ -1,7 +1,7 @@
 import postfinance
 import streamlit as st
 
-
+#dictionary with roles
 def new_chat():
     st.session_state.messages = [
         {"role": "assistant", "content": "How can I help you?"}
