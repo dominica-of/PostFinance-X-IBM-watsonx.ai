@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import postfinance
 import streamlit as st
 
@@ -172,4 +170,3 @@ if submitted:
 
 if submitted and response:
     st.info("💡 Please refresh the page to continue")
->>>>>>> 54c6290 (update default model params for translation and annotation)

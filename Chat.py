@@ -1,4 +1,5 @@
 import postfinance
+import postfinance
 import streamlit as st
 
 #dictionary with roles
@@ -156,30 +157,14 @@ if query := st.chat_input():
     with st.chat_message("user"):
         st.write(query)
 
-    with st.chat_message("assistant"):
-        with st.spinner("Thinking ..."):
-            response = agent.chat(
-                content=transcript,
-                messages=st.session_state.messages,
-                model=model,
-                params={
-                    "decoding_method": "sample" if sampling else "greedy",
-                    "temperature": temperature,
-                    "top_p": top_p,
-                    "top_k": top_k,
-                    "random_seed": random_seed,
-                    "repetition_penalty": repetition_penalty,
-                    "min_new_tokens": min_new_tokens,
-                    "max_new_tokens": max_new_tokens,
-                },
-                output_parse=True,
-            )
-        if response:
-            st.write(response)
-            st.session_state.messages.append(
-                {"role": "assistant", "content": response}
-<<<<<<< HEAD
-            )
-=======
-            )
->>>>>>> 53867a7 (support human review)
+    # Get agent response
+    response = agent.chat(
+        model="ibm-mistralai/mixtral-8x7b-instruct-v01-q",
+        params={"max_new_tokens": 1000},
+        content=query,
+        messages=st.session_state.messages,
+    )
+
+    # Display agent response
+    st.session_state.messages.append({"role": "assistant", "content": response})
+    st.chat_message("assistant").write(response)
