@@ -1,4 +1,8 @@
 import postfinance
+<<<<<<< HEAD
+=======
+import postfinance
+>>>>>>> 4a386bef7385d4e77a3671bf8e015f856025a209
 import streamlit as st
 
 #dictionary with roles
