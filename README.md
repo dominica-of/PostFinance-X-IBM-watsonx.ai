@@ -20,11 +20,11 @@ Employees at the PostFinance Customer Center aim to resolve customers' problems,
 
 **Definition of Done:**
 
-- [ ] Support to transcribe Customer Calls
+- [x] Support to transcribe Customer Calls
 - [x] Support to translate Transcripts
 - [x] Support to annotate Translations
 - [x] Support to store Transcripts, Translations and Annotations in database
-- [ ] Support to monitor a directory or a database, once a Customer Call is added, it would be automatically transcribed, translated and annotated
+- [x] Support to monitor a directory or a database, once a Customer Call is added, it would be automatically transcribed, translated and annotated
 
 
 
@@ -41,7 +41,7 @@ Employees at the PostFinance Customer Center aim to resolve customers' problems,
 
 **Definition of Done:**
 
-- [ ] Support human review for Transcript of a Customer Call on the Review page
+- [x] Support human review for Transcript of a Customer Call on the Review page
 - [x] Support human review for Translation of a Transcript on the Review page
 - [x] Support human review for Annotation of a Translation on the Review page
 
