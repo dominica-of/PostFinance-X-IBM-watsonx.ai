@@ -51,7 +51,7 @@ Employees at the PostFinance Customer Center aim to resolve customers' problems,
 
 **Definition of Done:**
 
-- [ ] Support data storytelling with database queries on the Dashboard page
+- [x] Support data storytelling with database queries on the Dashboard page
 
 
 
@@ -61,4 +61,4 @@ Employees at the PostFinance Customer Center aim to resolve customers' problems,
 
 **Definition of Done:**
 
-- [ ] Support to chat with Customer Calls, specifically Translations of Customer Calls on the Chat page
+- [x] Support to chat with Customer Calls, specifically Translations of Customer Calls on the Chat page
